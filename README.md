@@ -5,10 +5,10 @@ Generic recursive tree walker
 ```js
     var walker = new TreeWalker(function (node, next) {
         console.log("Enter " + node.id);
-        next();
+        next(TreeWalker.CONTINUE);
     }, function (node, next) {
         console.log("Leave" + node.id);
-        next();
+        next(TreeWalker.ABORT); //Only the first node in the tree
     });
 
     return walker.walk(tree).then(function () {
