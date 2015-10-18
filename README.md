@@ -1,7 +1,7 @@
 # tree-walker
 Generic recursive tree walker
 
-##Usage
+## Usage
 ```js
     var walker = new TreeWalker(function (node, next) {
         console.log("Enter " + node.id);
@@ -27,13 +27,13 @@ The `TreeWalker` constructor accepts 3 arguments:
  - getChildren: `function(node)`
 	 - `node:` The node to obtain the children of.
 
-##Visit results
+## Visit results
 `enterNode` and `leaveNode` can both return a result to the caller, the following values are possible:
-####`TreeWalker.ABORT` 
+#### `TreeWalker.ABORT` 
 Applicable to both `enterNode` and `leaveNode`, it will abort the walk of the tree from the current position
-####`TreeWalker.CONTINUE`
+#### `TreeWalker.CONTINUE`
 Applicable to both `enterNode` and `leaveNode`the walk of the tree will be continued, this is equivalent to returning nothing.
-####`TreeWalker.SKIPCHILDREN` 
+#### `TreeWalker.SKIPCHILDREN` 
 Applicable only to `enterNode`. it will signal the walker to skip the children of the current node.
-####`TreeWalker.SKIPSIBLINGS` 
+#### `TreeWalker.SKIPSIBLINGS` 
 Applicable to both `enterNode` and `leaveNode`, it signal the walker to skip the siblings of the current node.
