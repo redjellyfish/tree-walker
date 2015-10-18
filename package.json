@@ -1,0 +1,37 @@
+{
+  "name": "tree-walker",
+  "version": "1.0.0",
+  "description": "Generic recursive tree walker for node",
+  "main": "index.js",
+  "dependencies": {
+    "bluebird": "^2.10.2",
+    "native-or-bluebird": "^1.2.0"
+  },
+  "devDependencies": {
+    "chai": "^3.3.0",
+    "cheerio": "^0.19.0",
+    "eslint": "^1.7.1",
+    "istanbul": "^0.3.22",
+    "mocha": "^2.3.3"
+  },
+  "scripts": {
+    "test": "mocha test/**.js",
+    "coverage": "istanbul cover node_modules/mocha/bin/_mocha test/**.js -- -R spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/redjellyfish/tree-walker.git"
+  },
+  "keywords": [
+    "tree",
+    "walker",
+    "treewalker",
+    "walk"
+  ],
+  "author": "redjellyfish <dev@redjellyfish.co.uk> (http://redjellyfish.co.uk)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/redjellyfish/tree-walker/issues"
+  },
+  "homepage": "https://github.com/redjellyfish/tree-walker#readme"
+}
