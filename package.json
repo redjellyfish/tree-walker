@@ -15,8 +15,9 @@
     "mocha": "^2.3.3"
   },
   "scripts": {
-    "test": "mocha test/**.js",
-    "coverage": "istanbul cover node_modules/mocha/bin/_mocha test/**.js -- -R spec"
+    "test": "mocha test/**.js && eslint index.js test/*.js",
+    "coverage": "istanbul cover node_modules/mocha/bin/_mocha test/**.js -- -R spec",
+    "lint": "eslint index.js test/*.js"
   },
   "repository": {
     "type": "git",
