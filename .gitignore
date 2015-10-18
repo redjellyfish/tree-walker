@@ -32,3 +32,5 @@ node_modules
 .ntvs_analysis.dat
 obj/*
 bin/Microsoft.NodejsTools.WebRole.dll
+/.vs/TreeWalker/v14
+*.sln
